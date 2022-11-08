@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidebar {
+  height: 100%;
+  width: 50px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+.sidebar i {
+  padding: 6px 8px 6px 16px;
+  color: #0b0909;
+  display: block;
+}
+.sidebar i:hover {
+  color: #818181;
+}
+.main {
+  margin-left: 50px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  z-index: 2;
+  background-color: #43689b;
+  color: #1a1b1c;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar i {
+    font-size: 18px;
+  }
+}
