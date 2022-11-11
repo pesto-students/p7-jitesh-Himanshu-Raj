@@ -4,7 +4,7 @@ In this section, we will see what happens in the background, step by step when w
 
 ## When a user enters an URL in the browser, how does the browser fetch the desired result ?
 
-<img src="https://data-flair.training/blogs/wp-content/uploads/sites/2/2021/04/image0112.jpg" width="100" height="100">
+<img src="https://data-flair.training/blogs/wp-content/uploads/sites/2/2021/04/image0112.jpg" width="600" height="400">
 
 ### 1. You enter the URL in the browser.
 
@@ -46,7 +46,7 @@ Accept-Encoding: gzip, deflate
 Connection: Keep-Alive
 ```
 
-<img src="https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/what-happens-when-you-type-a-url-in-the-web-browser-request-response-f68c0cb95019db02.jpg" width="100" height="100">
+<img src="https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/what-happens-when-you-type-a-url-in-the-web-browser-request-response-f68c0cb95019db02.jpg" width="500" height="300">
 
 ### 5. The server handles the incoming request and sends an HTTP response.
 
@@ -98,7 +98,7 @@ A rendering engine is software that draws text and images on the screen. The eng
 - For rendering, a DOM and CSSOM are merged to form something called a Render Tree. Render Tree has the information required to mark and paint elements on the screen.
 - Also while forming a Render Tree, elements like head, link, script, and elements with 'display: none' in CSS are ignored since they are not rendered on the screen.
 
-<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--uJ44oL2X--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/s0cj1gr1srugpkc34985.png" width="100" height="100">
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--uJ44oL2X--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/s0cj1gr1srugpkc34985.png" width="600" height="400">
 
 ### Order of script processing
 
