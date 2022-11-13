@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  /* height: 100vh; */
+}
+.sidebar {
+  height: 80%;
+  width: 50px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.sidebar i {
+  padding: 6px 8px 6px 16px;
+  color: #0b0909;
+  display: block;
+}
+.sidebar i:hover {
+  color: #818181;
+}
+.main {
+  margin-left: 50px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+.main-content {
+  margin-top: 220px;
+}
+header {
+  padding: 3px;
+  background-color: #454545;
+  color: #1a1b1c;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-left: 50px;
+  width: 100%;
+  height: 200px;
+}
+footer {
+  padding: 3px;
+  z-index: 1;
+  background-color: #43689b;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 16%;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #f0f0f0;
+}
+.footer-song-poster {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+.footer-song-name {
+  margin-left: 5px;
+  text-align: center;
+  line-height: 0%;
+}
+.footer-icons {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-self: center;
+}
+.footer-icons i:hover {
+  color: #151313;
+}
+.header-content {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+.header-song-poster {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.header-song-icons-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+  color: #f0f0f0;
+}
+.header-song-name {
+  line-height: 0%;
+}
+.artist-detail {
+  margin-top: 30px;
+}
+.header-icons {
+  display: flex;
+  width: 240px;
+  justify-content: space-between;
+  text-size-adjust: 15px;
+  font-size: small;
+}
+.header-icons i {
+  margin-right: 4px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: left;
+  font-size: small;
+  padding: 8px;
+  width: 20%;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+td > a.catty-cloud-style {
+  border: 1px solid #121111;
+  text-decoration: none;
+  color: #7066fb;
+  padding: 2px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar i {
+    font-size: 18px;
+  }
+}
