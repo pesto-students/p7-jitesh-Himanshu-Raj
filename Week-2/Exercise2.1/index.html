@@ -34,49 +34,128 @@
       </div>
     </header>
 
-    <div class="main-content">
+    <div class="main-content new-content">
       <div class="image">
         <img src="./asset/cattyboard.jpg" alt="cattyboard" />
       </div>
       <div class="article-content">
-        <article class="article">
-          <h4>Lorem ipsum dolor sit</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
-            consequat viverra suscipit. Pellentesque accumsan at neque et
-            dignissim. Mauris auctor ut nibh non pharetra. Pellentesque habitant
-            morbi tristique senectus et netus et malesuada fames ac turpis
-            egestas.
-          </p>
-        </article>
-        <article class="article">
-          <h4>Lorem ipsum dolor sit</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
-            consequat viverra suscipit. Pellentesque accumsan at neque et
-            dignissim. Mauris auctor ut nibh non pharetra. Pellentesque habitant
-            morbi tristique senectus et netus et malesuada fames ac turpis
-            egestas.
-          </p>
-        </article>
-        <article class="article">
-          <h4>Lorem ipsum dolor sit</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
-            consequat viverra suscipit. Pellentesque accumsan at neque et
-            dignissim. Mauris auctor ut nibh non pharetra. Pellentesque habitant
-            morbi tristique senectus et netus et malesuada fames ac turpis
-            egestas.
-          </p>
-        </article>
+        <div class="default-article">
+          <article class="article col-2">
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
+              consequat viverra suscipit. Pellentesque accumsan at neque et
+              dignissim. Mauris auctor ut nibh non pharetra. Pellentesque
+              habitant morbi tristique senectus et netus et malesuada fames ac
+              turpis egestas.
+            </p>
+          </article>
+          <article class="article col-2">
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
+              consequat viverra suscipit. Pellentesque accumsan at neque et
+              dignissim. Mauris auctor ut nibh non pharetra. Pellentesque
+              habitant morbi tristique senectus et netus et malesuada fames ac
+              turpis egestas.
+            </p>
+          </article>
+          <article class="article col-2">
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
+              consequat viverra suscipit. Pellentesque accumsan at neque et
+              dignissim. Mauris auctor ut nibh non pharetra. Pellentesque
+              habitant morbi tristique senectus et netus et malesuada fames ac
+              turpis egestas.
+            </p>
+          </article>
+        </div>
+        <div class="added-article">
+          <article class="show-article">
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
+              consequat viverra suscipit. Pellentesque accumsan at neque et
+              dignissim. Mauris auctor ut nibh non pharetra. Pellentesque
+              habitant morbi tristique senectus et netus et malesuada fames ac
+              turpis egestas.
+            </p>
+          </article>
+          <article class="show-article">
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
+              consequat viverra suscipit. Pellentesque accumsan at neque et
+              dignissim. Mauris auctor ut nibh non pharetra. Pellentesque
+              habitant morbi tristique senectus et netus et malesuada fames ac
+              turpis egestas.
+            </p>
+          </article>
+          <article class="show-article">
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
+              consequat viverra suscipit. Pellentesque accumsan at neque et
+              dignissim. Mauris auctor ut nibh non pharetra. Pellentesque
+              habitant morbi tristique senectus et netus et malesuada fames ac
+              turpis egestas.
+            </p>
+          </article>
+        </div>
       </div>
     </div>
 
-    <div></div>
+    <div class="contact">
+      <form>
+        <fieldset>
+          <legend>Contact us</legend>
+          <label>Title:</label>
+          <input type="radio" id="mr" name="surname" value="Mr" />
+            <label for="mr">Mr</label>  
+          <input type="radio" id="mrs" name="surname" value="Mrs" />  
+          <label for="mrs">Mrs</label>
+          <input type="radio" id="miss" name="surname" value="Miss" />
+            <label for="miss">Miss</label><br /><br />
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" /><br /><br />
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday" /><br /><br />
+          <label for="number">Phone number:</label>
+          <input type="tel" id="number" name="number" /><br /><br />
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="england">England</option>
+            <option value="uk">Uk</option></select
+          ><br /><br />
+          <input type="checkbox" id="term" name="term" />
+          <label for="term"
+            >agree to the <a href="#">term and conditions</a></label
+          ><br /><br />
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </div>
 
-    <footer></footer>
+    <footer>
+      <p>
+        Author: Himanshu Raj<br />
+        <a href="mailto:heyhimanshur@gmail.com">heyhimanshur@gmail.com</a>
+      </p>
+    </footer>
   </body>
 </html>
