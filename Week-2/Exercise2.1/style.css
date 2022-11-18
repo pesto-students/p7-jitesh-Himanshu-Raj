@@ -153,6 +153,7 @@ input:focus:invalid {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    border-radius: 5px;
   }
   .show-article {
     background-color: #68b1cb;
