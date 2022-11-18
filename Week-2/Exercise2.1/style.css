@@ -4,14 +4,20 @@ body {
   font-family: "Lato", sans-serif;
   position: relative;
 }
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 50px;
+}
+header > h2[id="gradient"] {
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -20px;
 }
 .header-content {
   display: flex;
@@ -28,7 +34,9 @@ header {
   flex-direction: row;
   justify-content: space-between;
   gap: 40px;
-  /* background-color: rgb(194, 222, 244); */
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(194, 222, 244);
 }
 .image {
   width: 50%;
@@ -46,6 +54,7 @@ header {
   display: none;
 }
 .article {
+  border-radius: 5px;
   background-color: #68b1cb;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -74,6 +83,7 @@ legend {
 }
 .contact {
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 footer {
   position: absolute;
@@ -96,12 +106,28 @@ input[type="submit"]:hover {
   color: #ffffff;
 }
 
+input[type="password"]:valid {
+  border-color: #1ef50b;
+  outline: none;
+}
+input:focus:invalid {
+  border-color: #ff0000;
+  outline: none;
+}
+
 @media only screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  header > h2[id="gradient"] {
+    margin-top: -15px;
+  }
   .new-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
+    border-radius: 10px;
     margin-bottom: 20px;
     background-color: rgb(194, 222, 244);
   }
@@ -115,14 +141,8 @@ input[type="submit"]:hover {
     align-self: center;
     gap: 10px;
   }
-  .article-content > .default-article {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    /* align-self: center; */
-    gap: 10px;
-  }
-  .article-content > .added-article {
+  .article-content > .default-article,
+  .added-article {
     display: flex;
     width: 100%;
     flex-direction: row;
