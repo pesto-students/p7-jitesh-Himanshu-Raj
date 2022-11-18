@@ -52,15 +52,15 @@ h3 {
   z-index: 2;
 }
 
-#square-1:hover {
+.app:hover #square-1 {
   transform: rotate(90deg);
 }
-#square-2:hover {
+.app:hover #square-2 {
   transform: rotate(-90deg);
 }
-#square-3:hover {
+.app:hover #square-3 {
   transform: rotate(-90deg);
 }
-#square-4:hover {
+.app:hover #square-4 {
   transform: rotate(90deg);
 }
