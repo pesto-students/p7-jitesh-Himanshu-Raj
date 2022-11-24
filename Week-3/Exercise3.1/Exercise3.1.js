@@ -1,7 +1,4 @@
-function add(a, b) {
-  if (a || b) {
-    return a || b;
-  }
+function add(a, b = 0) {
   return a + b;
 }
 
@@ -20,6 +17,7 @@ function memoize(fn) {
 }
 
 const memoizeAdd = memoize(add);
+console.log(memoizeAdd);
 
 function timeTaken(fun) {
   console.time();
