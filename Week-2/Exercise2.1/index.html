@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>
+        Lorem ipsum dolor sit amet,
+        <!-- &nbsp;consectetur adipiscing elit. -->
+      </h2>
+      <h2 id="gradient">consectetur adipiscing elit.</h2>
+      <div class="header-content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+          dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
+          consequat viverra suscipit. Pellentesque accumsan at neque et
+          dignissim.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+          dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
+          consequat viverra suscipit. Pellentesque accumsan at neque et
+          dignissim.
+        </p>
+      </div>
+    </header>
+
+    <div class="main-content new-content">
+      <div class="image">
+        <img src="./asset/cattyboard.jpg" alt="cattyboard" />
+      </div>
+      <div class="article-content">
+        <div class="default-article">
+          <article class="article col-2">
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
+              consequat viverra suscipit. Pellentesque accumsan at neque et
+              dignissim. Mauris auctor ut nibh non pharetra,
+              <a href="#">read more</a>
+            </p>
+          </article>
+          <article class="article col-2">
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
+              consequat viverra suscipit. Pellentesque accumsan at neque et
+              dignissim. Mauris auctor ut nibh non pharetra,
+              <a href="#">read more</a>
+            </p>
+          </article>
+          <article class="article col-2">
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
+              consequat viverra suscipit. Pellentesque accumsan at neque et
+              dignissim. Mauris auctor ut nibh non pharetra,
+              <a href="#">read more</a>
+            </p>
+          </article>
+        </div>
+        <div class="added-article">
+          <article class="show-article">
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
+              consequat viverra suscipit. Pellentesque accumsan at neque et
+              dignissim. Mauris auctor ut nibh non pharetra,
+              <a href="#">read more</a>
+            </p>
+          </article>
+          <article class="show-article">
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
+              consequat viverra suscipit. Pellentesque accumsan at neque et
+              dignissim. Mauris auctor ut nibh non pharetra,
+              <a href="#">read more</a>
+            </p>
+          </article>
+          <article class="show-article">
+            <h4>Lorem ipsum dolor sit</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              dignissim pharetra urna, sed sagittis nulla facilisis eget. Nam
+              consequat viverra suscipit. Pellentesque accumsan at neque et
+              dignissim. Mauris auctor ut nibh non pharetra,
+              <a href="#">read more</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <form>
+        <fieldset>
+          <legend>Contact us</legend>
+          <label>Title:</label>
+          <input type="radio" id="mr" name="surname" value="Mr" required />
+            <label for="mr">Mr</label>  
+          <input type="radio" id="mrs" name="surname" value="Mrs" required />  
+          <label for="mrs">Mrs</label>
+          <input type="radio" id="miss" name="surname" value="Miss" required />
+            <label for="miss">Miss</label><br /><br />
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" required /><br /><br />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" required /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="8"
+          /><br /><br />
+          <label for="birthday">Birthday:</label>
+          <input
+            type="date"
+            id="birthday"
+            name="birthday"
+            required
+          /><br /><br />
+          <label for="number">Phone number:</label>
+          <input
+            type="tel"
+            id="number"
+            name="number"
+            pattern="[0-9]{10}"
+            minlength="10"
+            maxlength="10"
+            required
+          /><br /><br />
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="england">England</option>
+            <option value="uk">Uk</option></select
+          ><br /><br />
+          <input type="checkbox" id="term" name="term" required />
+          <label for="term"
+            >agree to the <a href="#">term and conditions</a></label
+          ><br /><br />
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </div>
+
+    <footer>
+      <p>
+        Author: Himanshu Raj<br />
+        <a href="mailto:heyhimanshur@gmail.com">heyhimanshur@gmail.com</a>
+      </p>
+    </footer>
+  </body>
+</html>
