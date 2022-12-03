@@ -1,4 +1,4 @@
-function createStack() {
+const createStack = () => {
   let items = [];
   return function () {
     return {
@@ -13,7 +13,7 @@ function createStack() {
       },
     };
   };
-}
+};
 
 const getStack = createStack();
 const stack = getStack();
