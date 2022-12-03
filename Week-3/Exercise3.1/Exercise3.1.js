@@ -8,10 +8,9 @@ function memoize(fn) {
     const key = param.toString();
     console.log(key);
     console.log(cache);
-    if (cache.has(key)) {
-      return cache.get(key);
+    if (!cache.has(key)) {
+      cache.set(key, fn(...param));
     }
-    cache.set(key, fn(...param));
     return cache.get(key);
   };
 }
