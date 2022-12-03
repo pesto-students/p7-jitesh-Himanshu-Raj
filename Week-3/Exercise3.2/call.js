@@ -1,4 +1,4 @@
-var studentObject = {
+const studentObject = {
   sName: this.sName,
   age: this.age,
   result: function (city, food) {
@@ -6,7 +6,7 @@ var studentObject = {
   },
 };
 
-var student1 = {
+const student1 = {
   sName: "himanshu",
   age: 23,
 };

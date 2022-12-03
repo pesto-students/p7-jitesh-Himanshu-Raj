@@ -1,8 +1,8 @@
-var num = [1, 2, 3, 4];
+let num = [1, 2, 3, 4];
 
 console.log(Math.max.apply(null, num));
 
-var studentObject = {
+const studentObject = {
   sName: this.sName,
   age: this.age,
   result: function (city, food) {
@@ -10,7 +10,7 @@ var studentObject = {
   },
 };
 
-var student1 = {
+const student1 = {
   sName: "himanshu",
   age: 23,
 };

@@ -5,7 +5,7 @@ function sum(a, b) {
   return this.a + this.b;
 }
 
-var result = sum.bind({ a: 1, b: 2 });
+const result = sum.bind({ a: 1, b: 2 });
 console.log(result());
 
 // console.log(result() === sum());
@@ -13,7 +13,15 @@ console.log(result());
 console.log("=================================");
 
 //Example 2 : object type
-var student = {
+const studentObject = {
+  sName: this.sName,
+  age: this.age,
+  result: function (city, food) {
+    return `${this.sName} is ${this.age} year old. he is from ${city}, likes ${food}`;
+  },
+};
+
+const student = {
   sName: "himanshu",
   age: 23,
   result: function () {
@@ -21,6 +29,6 @@ var student = {
   },
 };
 
-// console.log(student.result());
-var res = student.result.bind(student);
+//  console.log(student.result());
+const res = studentObject.result.bind(student, "Gorakhpur", "Ice-cream");
 console.log(res());
