@@ -1,0 +1,15 @@
+{
+  "name": "exercise5.4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Exercise5.4.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
+}
