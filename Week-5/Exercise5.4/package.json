@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "Exercise5.4.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "jest"
   },
