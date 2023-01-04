@@ -1,4 +1,4 @@
-function sortArray(arr) {
+const sortArray = (arr) => {
   const count = [0, 0, 0];
 
   // Count the number of 0s, 1s, and 2s in the array
@@ -14,7 +14,7 @@ function sortArray(arr) {
     }
   }
   return arr;
-}
+};
 
 console.log(sortArray([0, 2, 1, 2, 0]));
 console.log(sortArray([0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1]));
