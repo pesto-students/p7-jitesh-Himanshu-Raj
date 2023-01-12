@@ -14,7 +14,7 @@ const nextGreaterElement = (arr) => {
     for (let j = i + 1; j <= arr.length; j++) {
       const iVal = arr[i];
       const jVal = arr[j];
-      console.log("iVal:", iVal, "jVal:", jVal);
+      //console.log("iVal:", iVal, "jVal:", jVal);
       if (jVal > iVal) {
         result.push(jVal);
         break;
@@ -31,4 +31,4 @@ const nextGreaterElement = (arr) => {
 console.log(nextGreaterElement([1, 3, 2, 4]));
 
 //Time complexity: O(N^2)
-//Space complexity: O(N)
+//Space complexity: O(1)
