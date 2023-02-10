@@ -1,24 +1,24 @@
-import { useState } from "react";
-import { FaCheck, FaTrash } from "react-icons/fa";
+import React, { useState } from "react";
 import "./App.css";
+import TodoCard from "./TodoCard";
+import TodoInput from "./TodoInput";
 
-function App() {
-  const [todo, setTodo] = useState("");
+const App = () => {
   const [todoList, setTodoList] = useState([]);
   //console.log(todoList);
 
-  const addTodo = () => {
+  const addTodo = (todoValue) => {
     const newTodo = {
-      text: todo,
+      id: todoList?.length + 1,
+      text: todoValue,
       isCompleted: false,
     };
     setTodoList([...todoList, newTodo]);
-    setTodo("");
   };
 
   const deleteTodo = (value) => {
     const deletedTodo = todoList?.filter((item) => {
-      return item.text !== value.text;
+      return item.id !== value.id;
     });
     setTodoList(deletedTodo);
   };
@@ -32,50 +32,20 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Todo App</h2>
+      <div className="title">
+        <h3>Todo App</h3>
+      </div>
       <div className="mainContainer">
-        <div>
-          <input
-            type="text"
-            name="todo"
-            value={todo?.text}
-            placeholder="create new todo"
-            onChange={(event) => {
-              setTodo(event.target.value);
-            }}
-            required
-          />
-          <button className="add-button" onClick={addTodo}>
-            Add
-          </button>
-        </div>
-
+        <TodoInput addTodo={addTodo} />
         {todoList?.length > 0 ? (
           <div>
             {todoList?.map((item, index) => {
               return (
-                <div key={index} className="card">
-                  <div className="card-content">
-                    <div className="card-action">
-                      {!item.isCompleted ? (
-                        <FaCheck
-                          size={12}
-                          onClick={() => isTodoCompleted(index)}
-                        />
-                      ) : (
-                        <text className="completed">completed</text>
-                      )}
-                      <FaTrash
-                        size={12}
-                        color="red"
-                        onClick={() => deleteTodo(item)}
-                      />
-                    </div>
-                    <div>
-                      <h5>{item.text}</h5>
-                    </div>
-                  </div>
-                </div>
+                <TodoCard
+                  data={item}
+                  onDeleteTodo={() => deleteTodo(item)}
+                  onCheckTodo={() => isTodoCompleted(index)}
+                />
               );
             })}
           </div>
@@ -85,6 +55,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
