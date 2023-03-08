@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, memo } from "react";
 
 const TodoInput = (props) => {
   const { addTodo } = props;
@@ -31,4 +31,4 @@ const TodoInput = (props) => {
   );
 };
 
-export default TodoInput;
+export default memo(TodoInput);

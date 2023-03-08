@@ -1,4 +1,5 @@
 import { FaCheck, FaTrash } from "react-icons/fa";
+import React, { memo } from "react";
 import "./TodoCard.css";
 
 const TodoCard = (props) => {
@@ -22,4 +23,4 @@ const TodoCard = (props) => {
   );
 };
 
-export default TodoCard;
+export default memo(TodoCard);

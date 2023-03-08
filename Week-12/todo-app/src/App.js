@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import "./App.css";
 import TodoCard from "./TodoCard";
 import TodoInput from "./TodoInput";
@@ -7,28 +7,37 @@ const App = () => {
   const [todoList, setTodoList] = useState([]);
   //console.log(todoList);
 
-  const addTodo = (todoValue) => {
-    const newTodo = {
-      id: todoList?.length + 1,
-      text: todoValue,
-      isCompleted: false,
-    };
-    setTodoList([...todoList, newTodo]);
-  };
+  const addTodo = useCallback(
+    (todoValue) => {
+      const newTodo = {
+        id: todoList?.length + 1,
+        text: todoValue,
+        isCompleted: false,
+      };
+      setTodoList([...todoList, newTodo]);
+    },
+    [todoList]
+  );
 
-  const deleteTodo = (value) => {
-    const deletedTodo = todoList?.filter((item) => {
-      return item.id !== value.id;
-    });
-    setTodoList(deletedTodo);
-  };
+  const deleteTodo = useCallback(
+    (value) => {
+      const deletedTodo = todoList?.filter((item) => {
+        return item.id !== value.id;
+      });
+      setTodoList(deletedTodo);
+    },
+    [todoList]
+  );
 
-  const isTodoCompleted = (index) => {
-    const completedTodo = [...todoList];
-    completedTodo[index].isCompleted = true;
-    setTodoList(completedTodo);
-    //console.log("completedTodo:", completedTodo);
-  };
+  const isTodoCompleted = useCallback(
+    (index) => {
+      const completedTodo = [...todoList];
+      completedTodo[index].isCompleted = true;
+      setTodoList(completedTodo);
+      //console.log("completedTodo:", completedTodo);
+    },
+    [todoList]
+  );
 
   return (
     <div className="App">
