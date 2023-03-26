@@ -1,0 +1,23 @@
+.card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  min-width: 150px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-action > .completed {
+  color: green;
+  font-size: smaller;
+}
